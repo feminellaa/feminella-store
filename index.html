@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6d4257">
+<title>FEMINELLA | Fashion & Jewellery</title>
+<meta name="description" content="FEMINELLA — women's fashion, sarees, suits, kurtis and jewellery. Shop online and order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2e2730;--muted:#766b74;--brand:#6d4257;--brand2:#a86a83;--cream:#fff9f5;--line:#eadfe4;--card:#fff;--shadow:0 18px 45px rgba(56,35,46,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:var(--cream)}
+a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer}
+.topbar{background:var(--ink);color:#fff;text-align:center;padding:9px 15px;font-size:13px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,249,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.logo{font-family:"Playfair Display",serif;font-size:30px;letter-spacing:3px;color:var(--brand);font-weight:700}
+.logo small{display:block;font-family:"DM Sans";font-size:9px;letter-spacing:4px;color:var(--muted);text-align:center;margin-top:-3px}
+.navlinks{display:flex;gap:24px;font-size:14px;font-weight:600}.navlinks a:hover{color:var(--brand)}
+.navcta{border:0;background:var(--brand);color:#fff;padding:11px 17px;border-radius:999px;font-weight:700}
+.hero{max-width:1180px;margin:0 auto;padding:58px 20px 36px;display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,74px);line-height:.98;margin:0 0 20px}
+.hero h1 span{color:var(--brand)}
+.hero p{color:var(--muted);font-size:17px;line-height:1.7;max-width:560px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.primary,.secondary{padding:13px 20px;border-radius:999px;font-weight:700;border:1px solid var(--brand)}
+.primary{background:var(--brand);color:#fff}.secondary{background:#fff;color:var(--brand)}
+.hero-card{background:#fff;border-radius:30px;padding:12px;box-shadow:var(--shadow);transform:rotate(1deg)}
+.hero-card img{width:100%;height:430px;object-fit:cover;border-radius:22px}
+.badge{display:inline-block;background:#f2e4ea;color:var(--brand);padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:15px}
+.section{max-width:1180px;margin:auto;padding:50px 20px}.section-title{text-align:center;margin-bottom:28px}
+.section-title h2{font-family:"Playfair Display",serif;font-size:39px;margin:0 0 8px}.section-title p{margin:0;color:var(--muted)}
+.filters{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:25px 0 32px}
+.filter{border:1px solid var(--line);background:#fff;padding:10px 16px;border-radius:999px;color:var(--muted);font-weight:700}.filter.active,.filter:hover{background:var(--brand);border-color:var(--brand);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 30px rgba(56,35,46,.05);transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.product-img{width:100%;height:360px;object-fit:cover;background:#f4ece8}
+.product-body{padding:17px}.tag{font-size:11px;color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:1px}.product h3{margin:7px 0 5px;font-family:"Playfair Display",serif;font-size:21px}.desc{font-size:13px;color:var(--muted);min-height:38px}.price{font-size:20px;font-weight:800;margin:12px 0}
+.order{width:100%;border:0;background:var(--ink);color:#fff;border-radius:12px;padding:12px;font-weight:800}.order:hover{background:var(--brand)}
+.about{background:#f3e8ed}.about-inner{max-width:980px;margin:auto;text-align:center}.about h2{font-family:"Playfair Display",serif;font-size:38px;margin:0 0 14px}.about p{color:var(--muted);line-height:1.8}
+.footer{background:#2e2730;color:#fff;padding:42px 20px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer .logo{color:#fff}.footer p{color:#cfc6cb;max-width:480px;line-height:1.7}.footer-links{display:flex;gap:18px;flex-wrap:wrap;color:#ddd}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:50;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{background:#fff;width:min(520px,100%);border-radius:24px;padding:25px;position:relative}.close{position:absolute;right:18px;top:15px;border:0;background:#f4eef1;border-radius:50%;width:35px;height:35px}.modal h3{font-family:"Playfair Display";font-size:28px;margin:0 0 5px}.modal p{color:var(--muted);font-size:13px}.field{margin:12px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:12px;border:1px solid var(--line);border-radius:11px;font:inherit}.field textarea{min-height:80px;resize:vertical}.send{width:100%;padding:13px;border:0;border-radius:12px;background:#25D366;color:#073b1d;font-weight:900}
+.notice{background:#fff2cf;border:1px solid #ead7a3;padding:10px 12px;border-radius:12px;font-size:12px;color:#6a5726;margin:12px 0}
+.empty{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:35px}.hero-card{display:none}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.product-img{height:390px}.section{padding:38px 15px}.nav{padding:0 15px}.logo{font-size:25px}.navcta{padding:9px 13px}.hero{padding-left:15px;padding-right:15px}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+<div class="topbar">✨ New arrivals • Fashion, Sarees & Jewellery • Easy WhatsApp ordering</div>
+<header><div class="nav">
+  <a href="#" class="logo">FEMINELLA<small>STYLE • BEAUTY • ELEGANCE</small></a>
+  <nav class="navlinks"><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <button class="navcta" onclick="openWhatsApp('General Enquiry')">💬 WhatsApp</button>
+</div></header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="badge">WOMEN'S FASHION STORE</span>
+    <h1>Style that feels <span>beautifully you.</span></h1>
+    <p>Discover elegant sarees, suits, kurtis and jewellery curated by FEMINELLA. Choose your favourite piece and order directly on WhatsApp.</p>
+    <div class="hero-actions"><a class="primary" href="#shop">Shop Collection →</a><button class="secondary" onclick="openWhatsApp('General Enquiry')">Order on WhatsApp</button></div>
+  </div>
+  <div class="hero-card"><img src="images/saree-collection.png" alt="FEMINELLA saree collection"></div>
+</section>
+
+<section class="section" id="shop">
+  <div class="section-title"><h2>Our Collection</h2><p>Handpicked styles for everyday elegance & special occasions.</p></div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="saree">Sarees</button><button class="filter" data-filter="suit">Suits</button><button class="filter" data-filter="kurti">Kurtis</button>
+  </div>
+  <div class="grid" id="products"></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="about-inner"><h2>Welcome to FEMINELLA</h2><p>FEMINELLA is an online fashion & jewellery store focused on stylish, feminine and affordable pieces. We make discovering your next favourite look simple — browse, choose, and message us on WhatsApp to place your order.</p></div>
+</section>
+</main>
+
+<footer class="footer" id="contact"><div class="footer-inner">
+  <div><div class="logo">FEMINELLA</div><p>Fashion • Sarees • Suits • Kurtis • Jewellery<br>Online reselling store.</p></div>
+  <div><strong>Quick Links</strong><div class="footer-links" style="margin-top:14px"><a href="#shop">Shop</a><a href="#about">About</a><button style="background:none;border:0;color:#ddd;padding:0" onclick="openWhatsApp('General Enquiry')">WhatsApp</button></div></div>
+</div></footer>
+
+<div class="modal" id="modal"><div class="modal-box">
+  <button class="close" onclick="closeModal()">×</button>
+  <h3>Place your order</h3><p id="selectedProduct">FEMINELLA</p>
+  <div class="notice">Your order will open in WhatsApp with a pre-filled message.</div>
+  <div class="field"><label>Your Name</label><input id="customerName" placeholder="Enter your name"></div>
+  <div class="field"><label>Product / Size / Colour</label><input id="orderDetails" placeholder="e.g. Purple Suit, XL"></div>
+  <div class="field"><label>Delivery Address</label><textarea id="address" placeholder="Enter complete delivery address"></textarea></div>
+  <button class="send" onclick="sendOrder()">💬 Send Order on WhatsApp</button>
+</div></div>
+
+<script src="config.js"></script>
+<script>
+const products = [
+ {cat:"saree",name:"Noir Bandhani Saree",price:"₹1,499",img:"images/saree-black.png",desc:"Black & grey printed saree with elegant contrast detailing."},
+ {cat:"suit",name:"Royal Purple Embroidered Suit",price:"₹1,299",img:"images/suit-purple.png",desc:"Rich purple ethnic suit with detailed floral embroidery."},
+ {cat:"saree",name:"Designer Saree Collection",price:"₹1,899",img:"images/saree-collection.png",desc:"Elegant draped saree styles in statement colours."},
+ {cat:"kurti",name:"Ivory Printed Kurti Set",price:"₹899",img:"images/kurti-white.png",desc:"Comfortable ivory kurti with artistic print and blue bottoms."},
+ {cat:"suit",name:"Ruby Pink Embroidered Suit Set",price:"₹1,599",img:"images/suit-pink.png",desc:"Festive pink suit set with intricate embroidery and dupatta."}
+];
+let currentProduct = "General Enquiry";
+
+function render(filter="all"){
+ const el=document.getElementById("products");
+ const list=filter==="all"?products:products.filter(p=>p.cat===filter);
+ el.innerHTML=list.map(p=>`<article class="product">
+   <img class="product-img" src="${p.img}" alt="${p.name}">
+   <div class="product-body"><div class="tag">${p.cat}</div><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">${p.price}</div>
+   <button class="order" onclick='openOrder(${JSON.stringify(p.name+" — "+p.price)})'>Order on WhatsApp</button></div></article>`).join("") || '<div class="empty">No products in this category yet.</div>';
+}
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));btn.classList.add("active");render(btn.dataset.filter)}));
+function openOrder(product){currentProduct=product;document.getElementById("selectedProduct").textContent=product;document.getElementById("orderDetails").value=product;document.getElementById("modal").classList.add("show")}
+function openWhatsApp(product){openOrder(product)}
+function closeModal(){document.getElementById("modal").classList.remove("show")}
+function sendOrder(){
+ const name=document.getElementById("customerName").value.trim();
+ const details=document.getElementById("orderDetails").value.trim();
+ const address=document.getElementById("address").value.trim();
+ if(!name || !details || !address){alert("Please fill Name, Product details and Address.");return}
+ if(!FEMINELLA_WHATSAPP || FEMINELLA_WHATSAPP==="919999999999"){
+   alert("WhatsApp number is not configured yet. Open config.js and replace the sample number with your WhatsApp Business number.");
+   return;
+ }
+ const msg=`Hello FEMINELLA!%0A%0AI want to place an order.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Product:* ${encodeURIComponent(details)}%0A*Address:* ${encodeURIComponent(address)}%0A%0AThank you!`;
+ window.open(`https://wa.me/${FEMINELLA_WHATSAPP}?text=${msg}`,"_blank");
+}
+render();
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});
+</script>
+</body>
+</html>
