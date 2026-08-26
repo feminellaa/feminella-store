@@ -96,14 +96,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,249,245,.94);backdro
 </div></div>
 
 <script src="config.js"></script>
+<script src="products.js"></script>
 <script>
-const products = [
- {cat:"saree",name:"Noir Bandhani Saree",price:"₹1,499",img:"images/saree-black.png",desc:"Black & grey printed saree with elegant contrast detailing."},
- {cat:"suit",name:"Royal Purple Embroidered Suit",price:"₹1,299",img:"images/suit-purple.png",desc:"Rich purple ethnic suit with detailed floral embroidery."},
- {cat:"saree",name:"Designer Saree Collection",price:"₹1,899",img:"images/saree-collection.png",desc:"Elegant draped saree styles in statement colours."},
- {cat:"kurti",name:"Ivory Printed Kurti Set",price:"₹899",img:"images/kurti-white.png",desc:"Comfortable ivory kurti with artistic print and blue bottoms."},
- {cat:"suit",name:"Ruby Pink Embroidered Suit Set",price:"₹1,599",img:"images/suit-pink.png",desc:"Festive pink suit set with intricate embroidery and dupatta."}
-];
+
 let currentProduct = "General Enquiry";
 
 function render(filter="all"){
